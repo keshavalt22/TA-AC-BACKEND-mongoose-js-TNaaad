@@ -4,7 +4,6 @@ let Schema = mongoose.Schema;
 
 let userSchema = new Schema({
     name : String,
-    age: Number,
     email: {type: String, lowercase: true},
-    age: {type: Number, minimum: 0}
+    age: {type: Number, default: 0}
 }, {timestamps: true});
