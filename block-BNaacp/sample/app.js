@@ -18,7 +18,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/sample", {
 
 app.get('/', (req, res) => {
     res.send("Welcome");
-})
+});
 
 app.post('/users', (req, res, next) => {
     console.log(req.body);
